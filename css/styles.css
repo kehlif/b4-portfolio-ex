@@ -11,3 +11,39 @@
     min-height: 100vh;
   }
 }
+
+figure:hover figcaption{
+  opacity:1;
+  transform:translate(0px);
+}
+
+figcaption{
+  position:absolute;
+  bottom:1rem;
+  left:1rem;
+  color:white;
+  opacity:0;
+  transition:1s;
+  transform:translateY(50px);
+}
+
+figure:hover .img1{
+  transform:scale(1.25);
+  opacity:0.5;
+}
+
+.img1{
+  transition: 1s ease-in-out;
+}
+
+figure a{
+  overflow:hidden;
+  display:block;
+  background:black;
+}
+
+figure{
+  overflow:hidden;
+  margin:0;
+  position:relative;
+}
